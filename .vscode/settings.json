@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.title": "${rootName}${dirty}",
+		"editor.tabSize": 2,
+		"editor.formatOnPaste": true,
+		"problems.visibility": false,
+		"python.analysis.typeCheckingMode": "basic",
+		"conventionalCommits.scopes": [
+			"code",
+			"dependencies",
+			"data",
+			"analysis",
+			"publish"
+		]		
+	}
+}

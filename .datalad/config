@@ -1,0 +1,12 @@
+[datalad "dataset"]
+	id = 60445429-bfbb-43a1-89d8-5026a068b0e7
+
+[datalad "ui"]
+  suppress-similar-results = off
+
+[datalad "save"]
+  no-message=interactive
+
+[datalad "runtime"]
+  max-annex-jobs=10
+  max-jobs=10

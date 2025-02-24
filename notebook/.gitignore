@@ -1,0 +1,12 @@
+# This file tells datalad (git) what not to "track" or add to the dataset
+
+# Note: It is exceptionally important to ensure that patient protected health information (PHI) is not being published to any public platform. The safest option is to avoid placing PHI in the dataset. However, you may want to use datalad to track documents with PHI (e.g. consent forms). If so, it is possible to have datalad track the files, but keep them in the annex and do not "push" (publish) the annex to any public sources. While the contents of the file will not be able to be accessed (on a platform such as GitHub), the file names will be visible. Ensure that file names also do not contain PHI. The methods for assigning which files will be placed in Git (and chould be considered "public") vs files that are in the annex (and may be setup to be private) will be in the `.gitattributes` file. It is strongly recommended that, after ensuring that all of your institution's policies and legal regulations that may apply to you are followed, you test "pushing" your dataset to another local environment, where you can safely ensure that your dataset does not contain PHI.
+
+# Secrets stored as environments or secrets files
+*.env
+*.secrets
+
+# Code
+**/.jupyter_cache/
+
+/_tmp/

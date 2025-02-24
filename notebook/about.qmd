@@ -1,0 +1,39 @@
+---
+title: "About"
+subtitle: "Information about this site"
+date: last-modified
+date-format: full
+author:
+  - name:
+      given: Pranav Kumar
+      family: Mishra
+    affiliations:
+      - ref: rushsurg
+      - ref: rushortho
+    corresponding: true
+    url: https://drpranavmishra.com
+    email: pranav_k_mishra@rush.edu
+    orcid: 0000-0001-5219-6269
+    role: "Post Doctoral Research Fellow"
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    tbl-cap-location: bottom
+execute: 
+  enabled: true
+  cache: false
+
+---
+
+
+```{python}
+
+from datetime import datetime
+
+now = datetime.now()
+formatted_date = now.strftime("%m-%d-%Y at %I:%M %p")
+print(f"This file was last updated on {formatted_date}")
+
+
+```
