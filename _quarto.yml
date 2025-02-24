@@ -1,0 +1,99 @@
+project:
+    type: website
+    output-dir: ./notebook/_tmp
+    render:
+        - "*.qmd"
+        - "*.md"
+        - "docs/"
+        - "!readme.md"
+
+        # Do not render
+        - "!code/"
+    preview:
+        port: 3334
+        browser: true
+        watch-inputs: true
+        timeout: 300
+
+website:
+    title: "FacsimiLab - Project Template for Datalad Datasets"
+    navbar:
+        search: true
+        left:
+            - text: Home
+              href: index.qmd
+            - text: About
+              href: notebook/about.qmd
+    open-graph: true
+    sidebar:
+        style: "docked"
+        contents: auto
+    reader-mode: true
+    repo-url: https://github.com/FacsimiLab/project-template
+    repo-actions: [issue, edit]
+    repo-link-target: "_blank"
+    page-footer: "Copyright 2024: Pranav Kumar Mishra"
+
+bibliography:
+    - ./notebook/references.bib
+csl: ./notebook/american-medical-association.csl
+
+citation: false
+google-scholar: true
+
+format:
+    html:
+        theme:
+            light: cosmo
+            dark: darkly
+        toc: true
+        toc-depth: 3
+        lang: en-US
+        email-obfuscation: javascript
+        code-fold: true
+        code-line-numbers: true
+        code-overflow: wrap
+        grid:
+            sidebar-width: 300px
+            body-width: 900px
+        default-image-extension: svg
+        css: notebook/custom.css
+        tbl-cap-location: bottom
+        embed-resources: false
+
+pdf-engine: lualatex
+
+execute:
+    freeze: auto
+    cache: true
+    error: true
+
+affiliations:
+    - id: rushortho
+      name: Dept of Orthopedic Surgery, Rush University
+      # department: Orthopedic Surgery
+      city: Chicago
+      region: IL
+      country: USA
+      postal-code: 60612
+      affiliation-url: https://rushu.rush.edu
+
+    - id: rushsurg
+      name: Dept of Surgery, Rush University
+      # department: Surgery
+      address: 1735 W Harrison St, Ste 563
+      city: Chicago
+      region: IL
+      country: USA
+      postal-code: 60612
+      affiliation-url: https://rushu.rush.edu
+
+    - id: rushpeds
+      name: Dept of Pediatrics, Rush University
+      # department: Pediatrics
+      address: 1735 W Harrison St, Ste 563
+      city: Chicago
+      region: IL
+      country: USA
+      postal-code: 60612
+      affiliation-url: https://rushu.rush.edu

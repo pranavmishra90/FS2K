@@ -1,0 +1,18 @@
+repos:
+  - repo: "https://github.com/pre-commit/pre-commit-hooks"
+    rev: v4.6.0
+    hooks:
+      # Lint files
+      - id: check-yaml
+      - id: check-json
+        exclude: |
+            (?x)^(
+                .devcontainer/devcontainer.json|
+                exclude.this.file
+            )$
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      # Prevent adding private keys in files
+      - id: detect-private-key
+      # Detect problematic referenced files
+      - id: check-symlinks

@@ -1,0 +1,18 @@
+---
+title: "Title"
+subtitle: "Subtitle"
+date: last-modified
+date-format: medium
+author:
+  - name:
+      given: Pranav Kumar
+      family: Mishra
+    affiliations:
+      - ref: rushsurg
+      - ref: rushortho
+    corresponding: true
+    url: https://drpranavmishra.com
+    email: pranav_k_mishra@rush.edu
+    orcid: 0000-0001-5219-6269
+    role: "Post Doctoral Research Fellow"
+---
